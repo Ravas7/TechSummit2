@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="stylef.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+</head>
+<body>
+    <nav>
+        <ul id="navbar">
+            <li id="float"><a href="index.html">Home</a></li>
+            <li id="float"><a class="active" href="forms.html">Formulário de Inscrição</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form>
+            <div>
+                <label for="cname">NOME COMPLETO</label>
+                <input type="text" id="cname" name="cname" placeholder="Seu Nome...">
+            </div>
+
+            <div>
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required placeholder="Seu Email...">
+            </div>
+
+            <p>TIPO DE INGRESSO</p>
+            <div id="TI">
+                <input type="radio" name="radio" id="presencial" value="Presencial">
+                <label for="presencial">PRESENCIAL</label>
+
+                <input type="radio" name="radio" id="online" value="Online">
+                <label for="online">ONLINE</label>
+            </div>
+
+            <nav>
+                <a href="https://www.ceivap.org.br/downloads/Contrato%20AGEVAP%20LOCER.pdf" target="_blank">Termos de Contrato</a>
+            </nav>
+
+            <div id="TE">
+                <input type="checkbox" name="termos" id="termos" required>
+                <label for="termos">Aceito os Termos</label>
+            </div>
+
+            <div id="TS">
+                <button type="submit">Enviar</button>
+                <button type="reset">Reiniciar</button>
+            </div> 
+        </form>
+    </main>
+</body>
+</html>
